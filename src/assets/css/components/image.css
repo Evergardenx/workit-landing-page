@@ -1,0 +1,58 @@
+.image--hero {
+    inline-size: 55dvw;
+    z-index: 2;
+}
+
+.image--hero--hidden {
+    visibility: hidden;
+}
+
+.image--profile {
+    inline-size: 25rem;
+}
+
+@media screen and (max-width: 60rem ) {
+    .image--hero {
+        inline-size: 30rem;
+    }
+}
+.pattern {
+    position: absolute;
+}
+
+.pattern--left {
+    inline-size: 25rem;
+    inset-block-start: 10rem;
+    inset-inline-start: -8rem;
+}
+
+.pattern--right {
+    inline-size: 10rem;
+    inset-block-start: 20rem;
+    inset-inline-end: -2rem;
+}
+
+@media screen and (max-width: 57rem) {
+    .image--profile {
+        inline-size: 15rem;
+    }
+
+    .pattern--left {
+        inset-inline-start: -15rem;
+    }
+
+    .pattern--right {
+        inset-inline-end: -5rem;
+    }
+}
+
+@media screen and (max-width: 35rem) {
+    .image--hero {
+        inline-size: 20rem;
+    }
+
+    .pattern {
+        display: none;
+    }
+
+}

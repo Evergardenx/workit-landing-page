@@ -1,0 +1,55 @@
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+}
+
+.service--number {
+    border: 1px solid var(--md-sys-color-on-primary-container);
+    border-radius: 50%;
+    inline-size: 3rem;
+    block-size: 3rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
+    inline-size: max(15rem, 40rem);
+    block-size: fit-content;
+    position: relative;
+    right: 5rem;
+    top: 10rem;
+}
+
+@media screen and (min-width: 35rem) and (max-width: 57rem) {
+    .service {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .service--number {
+        inline-size: 68px;
+        block-size: 40px;
+        align-self: end;
+    }
+}
+
+@media screen and (max-width: 35rem) {
+    .contact {
+        inline-size: initial;
+        right: initial;
+        top: initial;
+        bottom: 3rem;
+        align-items: center;
+        text-align: center;
+    }
+}

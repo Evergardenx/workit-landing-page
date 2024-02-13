@@ -1,0 +1,54 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn--fill {
+    padding: 1rem;
+    background-color: var(--md-ref-palette-secondary90);
+    border: 2px solid var(--md-ref-palette-secondary90);
+    width: fit-content;
+}
+
+.btn--fill:hover {
+    background-color: transparent;
+    border: 2px solid var(--md-ref-palette-secondary90);
+    color: var(--md-ref-palette-secondary90);
+}
+
+.btn--text,
+.btn--text:link,
+.btn--text:visited {
+    color: var(--md-sys-color-background);
+    padding-block-end: .2rem;
+    border-block-end: 2px solid var(--md-ref-palette-secondary90);
+    text-decoration: none;
+}
+
+.btn--text:hover {
+    color: var(--md-ref-palette-secondary90);
+}
+
+/* Dark mode for btn-fill class */
+@media (prefers-color-scheme: dark) {
+    .btn--fill {
+        background-color: var(--md-ref-palette-secondary60);
+        border: 2px solid var(--md-ref-palette-secondary60);
+        color: #ffffff;
+    }
+    .btn--fill:hover {
+        background-color: transparent;
+        border: 2px solid var(--md-ref-palette-secondary60);
+        color: var(--md-ref-palette-secondary60);
+    }
+
+    .btn--text,
+    .btn--text:link,
+    .btn--text:visited {
+        border-block-end: 2px solid var(--md-ref-palette-secondary60);
+    }
+
+    .btn--text:hover {
+        color: var(--md-ref-palette-secondary60);
+    }
+}

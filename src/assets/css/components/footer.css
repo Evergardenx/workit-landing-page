@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 5dvw;
+    margin-block-start: 10rem;
+    gap: 3rem;
+}
+
+.footer--social-media {
+    display: flex;
+    gap: 2rem;
+    margin-block: 0;
+    padding-inline: 0;
+}
+
+/* Remove styles from li element */
+.item {
+    list-style: none;
+}
+
+@media screen and (max-width: 35rem) {
+    .footer {
+        margin-block-start: 0;
+        padding-block: 7dvw;
+    }
+}

@@ -1,0 +1,10 @@
+.text--decoration {
+    border-block-end: 3px solid var(--md-ref-palette-secondary90);
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .text--decoration {
+        border-block-end: 3px solid var(--md-ref-palette-secondary60);
+    }
+}
